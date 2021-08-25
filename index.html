@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="CSS/index.css" rel="stylesheet" />
+    <title>Validacion de datos</title>
+</head>
+<body>
+
+    <!-- ordenador de espacios con columnas -->
+
+    <div class="row align-items-center">
+        <div class="col-4">
+
+        </div>
+        <div class="col">
+
+            <br />
+            <br />
+            <h1>Iniciar sesion</h1>
+            <br />
+            <!-- espacios de ingreso de login -->
+            <form class="form" id="form">
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" required>
+                    <div id="usuarioDato" class="form-text">No comparta sus datos con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-dark" id="btn_iniciar-sesion" >Iniciar sesion</button>
+                <br />
+                <br />
+                <h6><a href="registro.html">Registrarme</a></h6>
+            </form>
+            <br />
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/registro.js"></script>
+</body>
+</html>

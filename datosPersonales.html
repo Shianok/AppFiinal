@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="CSS/datosPersonales.css" rel="stylesheet" />
+    <title>Datos Personales</title>
+</head>
+<body>
+
+    <!--navbar de usuario-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="imagenes/Logomep.png" alt="" width="46" height="40">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="principal.html">Progreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="datosPersonales.html">Actualizar personales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="actividadesFisicas.html">Actividades Fisicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alimentacion.html">Alimentacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="merienda.html">Meriendas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medicamentos.html">Medicamento</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <div class="usernav">
+                    <a href="index.html" id="close" class="nav-item nav-link active">Cerrar sesion</a>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+    <br />
+
+    <!--datos del usuario-->
+    <div class="row align-items-center">
+        <div class="col">
+
+        </div>
+        <div class="col-6">
+            <div class="container">
+                <h1><a>Datos de estudio:</a></h1>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <label for="peso" class="form-label">Peso:</label>
+                        <input type="number" class="form-control" id="peso" aria-label="Peso" required>
+                    </div>
+                    <div class="col">
+                        <label for="altura" class="form-label">Altura:</label>
+                        <input type="number" class="form-control" id="altura" aria-label="Altura" required>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <label for="masaMuscular" class="form-label">Masa muscular:</label>
+                        <input type="number" class="form-control" id="masaMuscular" aria-label="Masa muscular" required>
+                    </div>
+                    <div class="col">
+                        <label for="edad" class="form-label">Edad:</label>
+                        <input type="number" class="form-control" id="edad" aria-label="Edad" required>
+                    </div>
+                </div>
+                <br />
+                <div class="mb-3">
+                    <label for="notaExtra" class="form-label">Nota extra:</label>
+                    <input type="text" class="form-control" id="notaExtra" placeholder="Nota">
+                </div>
+                <br />
+                <div class="col-12">
+                    <form id="form">
+                        <button type="submit" class="btn btn-success" id="BtnGuardar">Guardar datos</button>
+                    </form>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="container">
+
+                <h2><a>Historial de registro:</a></h2>
+                <br />
+                <table class="table table-hover" id="tablaHistorial">
+                    <thead>
+                        <tr>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>Edad</th>
+                            <th>Masa Muscular</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+
+        </div>
+    <br />
+
+
+
+
+    <script src="JS/datosPersonales.js"></script>
+</body>
+</html>

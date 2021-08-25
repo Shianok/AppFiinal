@@ -1,0 +1,17 @@
+﻿body {
+    background: rgb(252,92,92);
+    background: linear-gradient(90deg, rgba(252,92,92,1) 0%, rgba(0,26,255,1) 100%);
+}
+
+.container {
+    background: #ffffff;
+    border: 10px solid #ffffff;
+    border-radius: 6px;
+}
+h1 {
+    font-family: cursive;
+}
+
+h4 {
+    font-family: cursive;
+}
